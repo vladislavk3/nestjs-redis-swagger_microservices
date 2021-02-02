@@ -1,0 +1,34 @@
+echo "setting up local env.."
+
+export KNOWIN_ENV=development
+export SENTRY_DNS=https://bcd48a87ed4f41b5be067013ce966184@o395484.ingest.sentry.io/5262942
+
+export TOKEN_JWT_OTP=ca8ca7cd-50b2-4375-a43c-330289386a43
+
+export API_ACCESS_TOKEN_GAME=helloworld1234
+export API_ACCESS_TOKEN_MAIN=helloworld12345
+export API_ACCESS_TOKEN_POLLING=helloworldadfadfasdfasd
+
+export AWS_ACCESS_KEY_ID=AKIA4MK5TPKZ4ZDX3WF4
+export AWS_SECRET_ACCESS_KEY="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"
+
+export MONGO_URI="mongodb+srv://admin:admin@quiz-a5bzm.mongodb.net/knowin?retryWrites=true&w=majority"
+
+export REDIS_URI=redis://185.26.147.58:6379
+export REDIS_HOST=185.26.147.58
+export REDIS_PORT=6379
+
+export MAIN_URI=http://localhost:8000
+export GAME_URI=http://localhost:3000
+export DASH_URI=http://knowin.now.sh
+
+export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/firebaseConfig.json
+
+  # Google Pay
+
+export GOOGLE_APPLICATION_PLAYSTORE_CLIENT_EMAIL=knowin-develop@knowin-278118.iam.gserviceaccount.com
+export GOOGLE_APPLICATION_PLAYSTORE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9737KzTSzchSe\nW6D+l3ONynD3saB+7g5OpDW/JfwKkwxTW7FYk27thhX0m1xpc+KroeLexsQZEPuL\nQL5uBGVwOxv42kP9lKuYHmn2/yqK5jE2XHZbOegry7nn314YcK9ehIynbK+FEDnv\n7rs2lvE1U4LnEaeh3H+8Gb2DIE4BpsxtXXXMLb4zC25sd+ykkostg+TxL8IdjJwS\npkaBH9FmAooKdoXWwaHZg7yn9fbdzputiGNbcipMMi1l11GAiORlCn1VxCobu9rn\nkKhBVWxy2hu7tbWdlpmsBcO59rvJJz0BsPMkUyotB0zhAF2802VbEuV3VMEr8+fr\ntnvQvZdRAgMBAAECggEAEzHzSy0abKE0nr1tY5VsRvHk4U95BCLsXLvBN8hvtKTg\nS8NaRLSfsw8IRIB4AitFRum1KyUE1/Csr0nThPxaQRGkNc3fLa86+URnmp/2jXOO\nmSsWhgkv4s8zwlCDaq5mtsNoEJqOEYFOjaY/ktiF14kRU2doHNZTLXAfhDM9VvK3\nB2W7dnexdCvo2TgA4Tkt/04URame/lg5AKuKbyyQGmNFAtbBmMD0ArXC46c4iUB0\n7rJzWfAeY1IsacGhjLUSxhZ3tpOcv7+TjdtTH44mSsRS81dMOwY/hZ35eZldeajS\nnx4aFF2gKEqVspvrSvgN35YYexM8fTb0JXdmlDEorQKBgQDtwdE0ZEblmFUurdS1\nYR5eVjiHVss7tWRjCZDaoUV1wgTG5fxTUbsPUHHMv3fVw/574Di1Ef9OCIrmgcbM\nFjQ8Ze2NL+2egUnxWa1l5WFaPMItEIs0BE2ZUeVYFJOBvngsghrV/x1e7iDauOtK\n5wPbdOz0WoDgVF31XcwW+YQH5QKBgQDMglXFiejDLVyf4shbOtUJmdNW4z7hwvOJ\nZ/3FrGNoAFq+LmQNaeFtc9SBjRiwsWo7LkiEyfeAIWzJrmyFDe3S9huGe2GNpcbT\n/7PQpAwyGinC/F0btcW1mF2fNtmQ1U3Qxg8k4vj0ieKDdw2MySOLa5qoZHhKYe6e\nsWBxtUoC/QKBgFqtd/+WWx/HyH0kGSMQJkfudGLRrHNaTC4lgNSRe29dDvtYzbJt\nUn2VvcFMKQUjWhSewKH2ejulsGwXhN1jfoqmiUI2zFaOksf03tgk8ss6rwgG7kBp\nf7sA7Ap61oM+RJEdEeUaBnalNWyV6E9J6kOxxYmwVsS4CJnDK0p74WotAoGAZybW\nXGzTGp8muP6KUHm8Ort7/bdhYD4U2Jm7RplNCogjPQnpLVraeXqTFUU1zumty2vs\n6A126Qny9UclNXdxHZdFCu/wpKGZSBURfYtBG4RWzCK+U9u7fXz8u/HOi18LgOJl\ngRV6vN1Pgz/pdbl+VDRSLd1/TwVWdnTBUJlAW4ECgYEAnkOg5Tw7oVPl3cXuWhmu\nrGLdkI27Zb7JkLxBcMra+2OLxpw75idyihF0OId+9ZrB8vB/Kd3SFCHhOLdXdzsA\nugoM5YzdvNOHJUkAjq0cgPpHfCwxmD5aa5PFxtS066qV+nLXhiW9FXcgA9lCI5es\n46Q27/DQEGtqNqb6yN28FjY=\n-----END PRIVATE KEY-----\n"
+
+
+# Hooks
+export WEBHOOKE_DISCORD=https://discord.com/api/webhooks/732957185889534082/lPnVRbM0DKSuDJaYCh9-dtDqOCfb2LWv_PxpSOXobtdAIGpxjyqK5TB9s3lTkMn560iD

@@ -1,0 +1,17 @@
+FROM node:12 as builder
+
+WORKDIR /user/src/builder
+COPY package*.json ./
+RUN npm install --silent
+COPY . .
+RUN npm run build game
+
+FROM node:12 as app
+
+WORKDIR /user/src/app
+COPY --from=builder /user/src/builder/package*.json ./
+RUN npm install --only=production
+COPY --from=builder /user/src/builder/dist/apps/game/ ./dist/
+EXPOSE 3000
+
+CMD ["node", "./dist/main.js"]

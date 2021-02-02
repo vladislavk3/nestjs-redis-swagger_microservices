@@ -1,0 +1,66 @@
+version: '3.4'
+
+services:
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    links:
+      - game-alpha
+      - main-alpha
+      - main-beta
+    ports:
+      - '80:80'
+      - '443:443'
+
+  game-alpha:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.game
+    container_name: game-alpha
+    expose:
+      - '3000'
+    links:
+      - redis
+    env_file: 
+      - .env
+    volumes:
+      - ./firebaseConfig.json:/root/firebaseConfig.json
+
+  main-alpha:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.knowin
+    container_name: main-alpha
+    expose:
+      - '8000'
+    env_file: 
+      - .env
+    volumes:
+      - ./firebaseConfig.json:/root/firebaseConfig.json
+  main-beta:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.knowin
+    container_name: main-beta
+    expose:
+      - '8000'
+    env_file: 
+      - .env
+    volumes:
+      - ./firebaseConfig.json:/root/firebaseConfig.json
+
+  polling-alpha:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.polling
+    container_name: polling-alpha
+    env_file: 
+      - .env
+    volumes:
+      - ./firebaseConfig.json:/root/firebaseConfig.json
+
+  redis:
+    image: redis:alpine
+    container_name: redis 
+    expose:
+      - '6379'

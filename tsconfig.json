@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "knowin/status-codes": [
+        "libs/status-codes/src"
+      ],
+      "knowin/status-codes/*": [
+        "libs/status-codes/src/*"
+      ],
+      "knowin/common": [
+        "libs/common/src"
+      ],
+      "knowin/common/*": [
+        "libs/common/src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

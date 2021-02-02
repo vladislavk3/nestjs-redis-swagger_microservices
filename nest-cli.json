@@ -1,0 +1,57 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/knowin/src",
+  "monorepo": true,
+  "root": "apps/",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/knowin/tsconfig.app.json"
+  },
+  "projects": {
+    "knowin": {
+      "type": "application",
+      "root": "apps/knowin",
+      "entryFile": "main",
+      "sourceRoot": "apps/knowin/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/knowin/tsconfig.app.json"
+      }
+    },
+    "game": {
+      "type": "application",
+      "root": "apps/game",
+      "entryFile": "main",
+      "sourceRoot": "apps/game/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/game/tsconfig.app.json"
+      }
+    },
+    "polling": {
+      "type": "application",
+      "root": "apps/polling",
+      "entryFile": "main",
+      "sourceRoot": "apps/polling/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/polling/tsconfig.app.json"
+      }
+    },
+    "status-codes": {
+      "type": "library",
+      "root": "libs/status-codes",
+      "entryFile": "index",
+      "sourceRoot": "libs/status-codes/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/status-codes/tsconfig.lib.json"
+      }
+    },
+    "common": {
+      "type": "library",
+      "root": "libs/common",
+      "entryFile": "index",
+      "sourceRoot": "libs/common/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    }
+  }
+}
